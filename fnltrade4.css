@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+     /* background-color:antiquewhite;  */
+      display: flex;
+  flex-direction: column; 
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f3f6fa;
+    padding: 0.5rem;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left img{
+   height: 3rem;
+   margin-left: 1rem;
+}
+.nav-left h3{
+    font-size: 2rem;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 1rem;
+}
+.nav-links li{
+    list-style: none;
+ 
+}
+.nav-links a{
+    text-decoration: none;
+       color: teal;
+       font-size: 1.2rem;
+       margin-right: 1;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #e7e583, #69bc78); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+                             /* main-content */
+  .main-content{
+    /* background-color: #f0efb4; */
+     height: calc(100vh - 5.3rem); 
+  }  
+                          /*  <!-- stock-search-addlist -->   */
+
+  .stock-search-addlist{
+   background-color: #FFF;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   position: sticky;
+   top: 0;
+   z-index: 900;
+}
+.search-box input{
+    width: 80%;
+     padding: 0.6rem;
+   margin: 0rem 1rem 0.5rem 1rem ;
+}
+
+.stock-add-listed{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 1rem 0 1rem;
+    padding: 0.6rem;
+}
+.stock-box{
+     color: rgb(80, 43, 226);
+    font-size: 1.3rem;
+    width: 2rem;
+    border: 1px solid rgb(178, 184, 177);
+    border-radius: 0.3rem;
+}
+.stock-box a{
+    text-decoration: none;
+}
+
+         .selected {
+  background-color: rgb(80, 43, 226);;
+  color: white;
+  font-weight: bold;
+}
+/*
+button {
+  margin-right: 0.5rem;
+  padding: 6px 12px;
+}
+ul {
+  margin-top: 1rem;
+} */
+                                         /*  <!-- side watchlist -->   */
+  
+  .side-watchlist{
+      height: 100%;
+    /* background-color: rgba(142, 142, 243, 0.728); */
+    width: 28%;
+    overflow-y: auto;
+  }
+
+  
+  .stock-row{
+      display: flex;
+    justify-content: space-between;
+    background-color:rgb(255, 255, 255);
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+   margin-top: 5px;
+   padding:8px ;
+   border-radius: 8px;
+   align-items: center;
+  }
+  /* .stock-row span{
+    margin-left: 8px;
+} */
+/* .stock-row button{
+    width: 50px;
+    height: 20px;
+   margin-right: 10px;
+   color: aliceblue;
+   display: none;
+} */
+  
+    /* .stock-row button {
+    width: 32px;
+    height: 32px;
+   margin-right: 4px;
+   color: aliceblue;
+   display: none;
+} */
+
+  #chrt{
+    margin: 0 0.3rem;
+      width: 2rem;
+    height: 2rem;
+     background-color: rgb(137, 133, 242);
+     color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #b{
+    margin: 0 0.3rem;
+      width: 2rem;
+    height: 2rem;
+     background-color: teal;
+     color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  #s{
+    margin: 0 0.3rem;
+      width: 2rem;
+    height: 2rem;
+     background-color: rgb(207, 27, 27);
+     color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+
+                                  /* googlr delet button */
+   
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24
+} */
+                              
+                                 
+   .material-symbols-outlined.close-icon {
+    
+  /* background-color: #ebe4b2; */
+  font-size: 28px; 
+  color: rgb(75, 123, 206);
+  transition: color 0.3s ease;
+  cursor: pointer;
+   border-radius: 10px;
+   right: 0px;
+}
+
+.material-symbols-outlined.close-icon:hover {
+  color: rgb(203, 69, 25);
+  cursor: pointer;
+  
+}
+
+
+                                    /* search box suggestion */
+     
+     .suggestion-box {
+  /* border: 1px solid #ccc; */
+  background: #fff;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+.suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestion:hover {
+  background: #eee;
+}
+
+                                /* <!-- -------main panel --> */
+
+.main-panel{
+     /* background-color: rgb(199, 239, 226); */
+    width: 70.1%;
+     height: calc(100vh - 5.3rem);
+    position: absolute;
+    left: 28%;
+    top: 3.3rem;
+    overflow-y: auto;
+    margin:1rem;
+   
+ }
+
+ .first-row{
+    width: 100%;
+    height: 5rem;
+     border: 1px solid rgb(178, 184, 177);
+     margin-bottom: 1rem;
+    
+ }
+
+ .scond-row{
+     width: 100%;
+    height: 3rem;
+     margin-bottom: 1rem;
+     /* border: 1px solid rgb(178, 184, 177); */
+ }
+
+ .third-row{
+     width: 100%;
+    height: 6rem;
+     border: 1px solid rgb(178, 184, 177);
+      margin-bottom: 1rem;
+ }
+
+ .forth-row{
+      width: 100%;
+    height: 3rem;
+     margin-bottom: 1rem;
+     /* border: 1px solid rgb(178, 184, 177); */
+ }
+
+ .five-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ 
+ .child-boxx{
+    width: 18rem;
+     height: 3rem;
+     border: 1px solid rgb(178, 184, 177);
+      margin-bottom: 1rem;
+ }
+ .seven-row{
+       width: 100%;
+    height: 3rem;
+     margin-bottom: 1rem;
+     /* border: 1px solid rgb(178, 184, 177); */
+
+ }
+
+ .six-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+     margin-bottom: 1rem;
+    
+ }
+ .child-box{ width: 18rem;
+     height: 3rem;
+     border: 1px solid rgb(178, 184, 177);}
+.eight-row{   width: 100%;
+    height: 3rem;
+     border: 1px solid rgb(178, 184, 177);}
+
+     .nine-row{
+         display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+     /* margin-bottom: 1rem; */
+     }
+
+     .child-bo{
+          width: 18rem;
+     height: 3rem;
+     border: 1px solid rgb(178, 184, 177);
+      margin-bottom: 1rem;
+     }
+      .footer{
+        width: 100%;
+        background-color: #5f61ee;
+        height: 1.4rem;
+        bottom: 0;
+        position: fixed;
+     } 
+     .footer p{
+        color: #fff;
+        text-align: center;
+     } 
+     .end-here{
+        text-align: center;
+        margin-bottom: 1rem ;
+        color: #c1b240;
+     }
+ 
+
+
+
+     /* Scrollbar hide karne ke liye 
+.main-panel, .side-watchlist {
+  scrollbar-width: none;       Firefox ke liye 
+  -ms-overflow-style: none;    Internet Explorer 10+ ke liye 
+}
+
+.main-panel::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari, Opera ke liye 
+}
+.side-watchlist::-webkit-scrollbar {
+  display: none;               Chrome, Safari, Opera ke liye 
+}
+*/
+
+                               

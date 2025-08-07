@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fnltrade4</title>
+    <link rel="stylesheet" href="fnltrade4.css">
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://unpkg.com/lightweight-charts@3.8.0/dist/lightweight-charts.standalone.production.js"></script>
+     <style>
+    
+    #chart {height: calc(96vh - 6.3rem); margin: auto;  }
+    h2 { font-size: 24px; }
+  </style>
+
+</head>
+<body>
+    <!-- navbar -->
+
+ <header class="navbar">
+    <div class="nav-left">
+       <a href="fnltrade4.html">
+         <img src="img/trading unlock 3.0.png">
+      </a>
+        <!-- <h3 class="gradient-text">Trading</h3> -->
+    </div>
+    <nav class="nav-links">
+        <ul>
+            <li><a href="fnltrade4.html">Home</a></li>
+            <li><a href="fnltrade4watchlist.html">Watchlist</a></li>
+            <li><a href="/prtfilio">Portfolio</a></li>
+            <li><a href="/position">Position</a></li>
+            <li><a href="/trade">Trade</a></li>
+        </ul>
+    </nav>
+ </header>
+                             <!-- main-content -->
+
+  <div class="main-content">
+        <div class="side-watchlist">
+                          <!-- stock-search-addlist --> 
+            <div class="stock-search-addlist">
+        <div class="search-box">
+            <input type="text" id="stockInput" placeholder="search stock here...">
+        </div>
+        <div id="watchlistSelectors" class="stock-add-listed">
+  <button id="selectA" class="stock-box">A <span id="countA"></span></button>
+  <button id="selectB" class="stock-box">B <span id="countB"></span></button>
+  <button id="selectC" class="stock-box">C <span id="countC"></span></button>
+  <button id="selectD" class="stock-box">D <span id="countD"></span></button>
+  <button id="selectE" class="stock-box">E <span id="countE"></span></button>
+  <button id="selectF" class="stock-box">F <span id="countF"></span></button>
+</div>
+</div> 
+<!-- All lists, only active one will be visible -->
+<ul id="listA"></ul>
+<ul id="listB" style="display: none;"></ul>
+<ul id="listC" style="display: none;"></ul>
+<ul id="listD" style="display: none;"></ul>
+<ul id="listE" style="display: none;"></ul>
+<ul id="listF" style="display: none;"></ul>
+      
+                                 <!--  watchlist -->
+            <div class="stock-add-watchlist">
+                 <!-- <div class="stock-row"> -->
+                  
+                              <!-- <span>Nifty 1</span>
+                              <div class="price">
+                                25,453.40
+                              </div>
+                              <div class="bs-button">
+                                 <button id="chart">chart</button>
+                                <button id="b">B</button>
+                                <button id="s">S</button>
+                                <span class="material-symbols-outlined">close</span>
+                              </div> -->
+                            <!-- </div>  -->
+
+                            <!-- <div class="stock-row">
+                              <span>Nifty 2</span>
+                              <div class="price">
+                                25,453.40
+                              </div>
+                              <div class="bs-button">
+                                <button id="chart">chart</button>
+                                <button id="b">B</button>
+                                <button id="s">S</button>
+                                <span class="material-symbols-outlined">close</span>
+                              </div>
+                            </div> -->
+
+                           
+                           </div>
+        </div>
+        <!-- -------main panel -->
+
+        <div class="main-panel">
+            
+        <div id="chart">
+       <button onclick="clearChart()" style="margin: 5px; padding: 5px 5px;">🧹 Clear Chart</button> 
+       <hr>
+     </div>  
+                 
+              
+        </div>
+        <br><br>
+
+ <div class="footer">
+    <p>@Trading Unlock</p>
+ </div>
+      </div>
+  <script src="fnltrade4watchlist.js"></script>    
+ <script src="fnltrade4.js"></script>   
+</body>
+</html>
