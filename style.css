@@ -320,13 +320,15 @@ ul {
       .footer{
         width: 100%;
         background-color: #5f61ee;
-        height: 1.4rem;
+        height: 2rem;
         bottom: 0;
         position: fixed;
      } 
      .footer p{
+        margin-top: 0.3rem;
         color: #fff;
         text-align: center;
+        font-size: 1.3rem;
      } 
      .end-here{
         text-align: center;
